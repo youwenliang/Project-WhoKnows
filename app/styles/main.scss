@@ -1,0 +1,245 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  background-color: #f7f7f7;
+  overflow-y: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, p, span {
+  font-family: "Fira Sans", monospace !important;
+  color: #4a4a4a;
+}
+
+h4 {
+  font-weight: 600 !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+h5 {
+  font-weight: 200 !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+span {
+  display: inline-block;
+  background-color: #c8c8c8;
+  color: #fff;
+  padding: 2px 8px;
+  margin:6px 6px 0 0;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+footer {
+  text-align: center;
+  margin: 30px auto;
+  z-index: 100;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.list {
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 340px;
+  padding-left: 0px;
+  padding-bottom: 80px;
+  & li {
+    display: inline-block;
+    margin: 20px;
+  }
+}
+
+.background {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f7f7f7;
+  z-index: 5;
+  display: none;
+}
+
+.search {
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all .4s ease-in-out;
+  z-index: 10;
+
+  & h1 {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    height: 84px;
+  }
+
+  & input {
+    border: 0px;
+    border-bottom: 4px #4a4a4a solid;
+    text-align: center;
+    color: #9b9b9b;
+  }
+}
+
+.mdl-card {
+  width: 320px !important;
+  height: 360px !important;
+  padding: 20px !important;
+}
+
+.front p {
+  margin-bottom: 6px;
+}
+
+.skype {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.profile {
+  display: block;
+  background-color: #ddd;
+  background-size: cover;
+  border-radius: 50%;
+  width:110px;
+  height:110px;
+  position: relative;
+  margin: auto;
+
+  & p{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 9pt;
+    width: 100px;
+  }
+
+  & p.team {
+    text-align: left;
+    left: -80px;
+    top: -20px;
+  }
+
+  & p.location {
+    text-align: right;
+    right: -80px;
+    top: -20px;
+  }
+}
+
+article {
+  overflow-y: scroll;
+}
+
+.back {
+  padding-right: 5px !important;
+}
+
+.back p{
+  /*overflow-y: scroll;*/
+  text-align: left;
+}
+
+.back h4 {
+  text-align: left;
+  font-size: 16pt;
+}
