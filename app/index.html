@@ -139,17 +139,24 @@
           for(var j = 0; j < iitem.length; j++) {
             $('.list li:nth-child('+parseInt(i+1)+') .interests').append('<span>'+iitem[j].trim()+'</span>');
           }
-
         }
         $(".card").flip({
           axis: 'y',
-          trigger: 'click',
+          trigger: 'hover',
           speed: '400'
         });
       });
      });
 
      $('.input').bind('input propertychange', function(){
+        // $(".card").flip(false);
+        $('.highlight').removeClass("highlight");
+        $('span').each(function(){
+          console.log($('.input').val());
+          if($(this).html().toLowerCase().indexOf($('.input').val().toLowerCase())>=0) {
+            $(this).addClass("highlight");
+          }
+        });
         if(!$(this).val()) {
           $('.search').css('height','100%');
           $('.background').css('display','block');

@@ -22,6 +22,10 @@ body {
   transition: all .4s ease-in-out;
 }
 
+h1 {
+  font-weight: 500 !important;
+}
+
 h1, h2, h3, h4, h5, p, span {
   font-family: "Fira Sans", monospace !important;
   color: #4a4a4a;
@@ -48,6 +52,12 @@ span {
   border-radius: 6px;
   text-transform: capitalize;
 }
+
+span.highlight {
+  background-color: #FFFc8c;
+  color: #4a4a4a;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -173,7 +183,7 @@ footer {
 
   & input {
     border: 0px;
-    border-bottom: 4px #4a4a4a solid;
+    border-bottom: 6px #4a4a4a solid;
     text-align: center;
     color: #9b9b9b;
   }
@@ -228,10 +238,24 @@ footer {
 
 article {
   overflow-y: scroll;
+  padding: 20px 0;
 }
 
 .back {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   padding-right: 5px !important;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 8%,rgba(255,255,255,0) 92%,rgba(255,255,255,1) 100%);
+    pointer-events: none;
+  }
 }
 
 .back p{
@@ -242,4 +266,8 @@ article {
 .back h4 {
   text-align: left;
   font-size: 16pt;
+}
+
+.interests {
+  margin-bottom: 30px;
 }
