@@ -27,7 +27,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, p, span {
-  font-family: "Fira Sans", monospace !important;
+  font-family: "Circular", monospace !important;
   color: #4a4a4a;
 }
 
@@ -270,4 +270,22 @@ article {
 
 .interests {
   margin-bottom: 30px;
+}
+
+@font-face {
+    font-family: Circular;
+    src: url(../fonts/lineto-circular-pro-book.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Circular;
+    src: url(../fonts/lineto-circular-pro-medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Circular;
+    src: url(../fonts/lineto-circular-pro-bold.ttf);
+    font-weight: 700;
 }
